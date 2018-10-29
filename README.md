@@ -6,3 +6,5 @@ First RESTful app
 - planned out models
 - planned and created file structure
 - installed all packages
+
+- express and router in app.js, created home route
