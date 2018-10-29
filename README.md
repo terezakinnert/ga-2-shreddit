@@ -8,3 +8,4 @@ First RESTful app
 - installed all packages
 
 - express and router in app.js, created home route
+- header with basic navbar
