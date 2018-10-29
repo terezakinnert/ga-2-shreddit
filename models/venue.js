@@ -9,7 +9,7 @@ const venueSchema = mongoose.Schema({
   capacity: Number,
   closestTube: String,
   description: String,
-  avgRating: Number,
+  // avgRating: Number,
   review: [
     {
       username: String,
@@ -22,6 +22,5 @@ const venueSchema = mongoose.Schema({
   ]
 });
 
-
-const venueModel = mongoose.Model('Venue', venueSchema);
+const venueModel = mongoose.model('Venue', venueSchema);
 module.exports = venueModel;
