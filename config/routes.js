@@ -29,8 +29,8 @@ router.route('/register')
   .post(authController.registerRoute);
 
 router.route('/login')
-  .get(authController.loginFormRoute);
-//   .post(authController.loginRoute);
+  .get(authController.loginFormRoute)
+  .post(authController.loginRoute);
 
 
 

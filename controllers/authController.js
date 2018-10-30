@@ -12,19 +12,29 @@ function registerRoute(req, res) {
     });
 }
 
-
-
 function loginFormRoute(req, res) {
   res.render('auth/login');
 }
-//
-//
-// loginRoute
-//
+
+function loginRoute(req, res) {
+  console.log('User is logging in', req.body);
+  User.findOne({ email: req.body.email })
+    .then(result => {
+      if (!result) {
+        console.log('User not authorised');
+        res.redirect('/login');
+      } else {
+        req.session.userId = result._id;
+        res.redirect('/');
+      }
+    });
+}
+
 
 module.exports = {
   registerFormRoute: registerFormRoute,
   registerRoute: registerRoute,
-  loginFormRoute: loginFormRoute
-  // loginRoute: loginRoute
+  loginFormRoute: loginFormRoute,
+  loginRoute: loginRoute
+  // logoutRoute: logoutRoute
 };

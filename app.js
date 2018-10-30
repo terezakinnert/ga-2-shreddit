@@ -18,6 +18,10 @@ mongoose.connect(env.dbUri);
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
+const expressSession = require('express-session');
+app.use(expressSession({ secret: 'music', resave: false, saveUninitialized: false }));
+
+
 // Logging middleware
 app.use('*', function(req, res, next) {
   console.log('Incoming request', req.method, req.originalUrl);
