@@ -13,4 +13,8 @@
 
   </div>
   <a href="/venues/:id/edit">Edit this venue</a>
+
+  <form action="/venues/<%= _id %>?_method=DELETE" method="post">
+    <button>Delete this venue</button>
+  </form>
 </div>

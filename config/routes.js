@@ -14,7 +14,8 @@ router.route('/venues')
 
 router.route('/venues/:id')
   .get(venueController.showRoute)
-  .put(venueController.updateRoute);
+  .put(venueController.updateRoute)
+  .delete(venueController.deleteRoute);
 
 router.get('/new', venueController.newRoute);
 

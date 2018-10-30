@@ -22,13 +22,13 @@ First RESTful app
 - create show route (routes, venueController)
 - populate show.ejs
 - test
-  (weird linters)
+  (weird linters - JSX elements )
 
 - add new and create routes
 - add new form
 
 - add create route
-- watch out for url in the form!
+ (watch out for url in the form!)
 
-- add edit and update routes 
+- add edit and update routes
 -

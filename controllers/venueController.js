@@ -40,11 +40,19 @@ function updateRoute(req, res) {
     });
 }
 
+function deleteRoute(req, res) {
+  Venue.findByIdAndDelete(req.params.id)
+    .then(() => {
+      res.redirect('/venues/');
+    });
+}
+
 module.exports = {
   indexRoute: indexRoute,
   showRoute: showRoute,
   newRoute: newRoute,
   createRoute: createRoute,
   editRoute: editRoute,
-  updateRoute: updateRoute
+  updateRoute: updateRoute,
+  deleteRoute: deleteRoute
 };
