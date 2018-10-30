@@ -15,5 +15,11 @@ First RESTful app
 
 - create index route
   (forgot to link mongoose in app.js!)
-- populate index.ejs
+- test index.ejs
 - run create-data  
+- populate index.ejs
+
+- create show route (routes, venueController)
+- populate show.ejs
+- test
+  (weird linters)

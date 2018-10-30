@@ -12,4 +12,7 @@ router.get('/about', function(req, res) {
 router.route('/venues')
   .get(venueController.indexRoute);
 
+router.route('/venues/:id')
+  .get(venueController.showRoute);
+
 module.exports = router;

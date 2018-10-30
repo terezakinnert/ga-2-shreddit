@@ -9,6 +9,15 @@ function indexRoute(req, res) {
   });
 }
 
+function showRoute(req, res) {
+  Venue
+    .findById(req.params.id)
+    .then(venue => {
+      res.render('venues/show', venue);
+    });
+}
+
 module.exports = {
-  indexRoute: indexRoute
+  indexRoute: indexRoute,
+  showRoute: showRoute
 };
