@@ -21,10 +21,18 @@ const venueData = [
     image: '',
     website: 'http://www.ourblackheart.com',
     capacity: 70,
-    closestTube: 'Brixton',
-    description: 'all kinds of cool stuff in Brixton'
+    closestTube: 'Camden',
+    description: 'all kinds of cool stuff in Camden'
   }];
 
+Venue.create(venueData)
+  .then(result => {
+    console.log(`Created ${result.length} venues!`);
+    mongoose.connection.close();
+  });
+
+
+// ======================
 // name: String,
 // address: String,
 // image: String,
@@ -44,10 +52,3 @@ const venueData = [
 //     date: String
 //   }
 // ]
-
-
-Venue.create(venueData)
-  .then(result => {
-    console.log(`Created ${result.length} venues!`);
-    mongoose.connection.close();
-  });

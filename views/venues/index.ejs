@@ -1,28 +1,9 @@
-<main>
+<h1>Index</h1>
+
+<div class="venue-container">
+  <% venues.forEach(venue => {  %>
   <div class="">
-    <%  %>
+    <%= venue.name %>
   </div>
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-====================
-<div class="cocktail-grid">
-    <% cocktails.forEach(cocktail => {%>
-      <div>
-      <a href="/cocktails/<%= cocktail.id %>">
-      <img width="200px" height="200px" src="<%= cocktail.image %>" />
-      <h3><%= cocktail.name %></h3>
-      </a>
-      </div>
-      <% }) %>
-    </div>
+  <% }) %>
+</div>

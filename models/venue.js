@@ -5,11 +5,9 @@ const venueSchema = mongoose.Schema({
   address: String,
   image: String,
   website: String,
-  // social links?
   capacity: Number,
   closestTube: String,
   description: String,
-  // avgRating: Number,
   review: [
     {
       username: String,
