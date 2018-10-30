@@ -25,8 +25,8 @@ router.post('/venues', venueController.createRoute);
 router.get('/venues/:id/edit', venueController.editRoute);
 
 router.route('/register')
-  .get(authController.registerFormRoute);
-// .post(authController.registerRoute);
+  .get(authController.registerFormRoute)
+  .post(authController.registerRoute);
 
 router.route('/login')
   .get(authController.loginFormRoute);
