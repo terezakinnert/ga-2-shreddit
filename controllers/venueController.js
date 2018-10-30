@@ -33,10 +33,18 @@ function editRoute(req, res) {
     });
 }
 
+function updateRoute(req, res) {
+  Venue.findByIdAndUpdate(req.params.id, req.body)
+    .then(venue => {
+      res.redirect(`/venues/${venue._id}`);
+    });
+}
+
 module.exports = {
   indexRoute: indexRoute,
   showRoute: showRoute,
   newRoute: newRoute,
   createRoute: createRoute,
-  editRoute: editRoute
+  editRoute: editRoute,
+  updateRoute: updateRoute
 };

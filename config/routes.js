@@ -13,7 +13,8 @@ router.route('/venues')
   .get(venueController.indexRoute);
 
 router.route('/venues/:id')
-  .get(venueController.showRoute);
+  .get(venueController.showRoute)
+  .put(venueController.updateRoute);
 
 router.get('/new', venueController.newRoute);
 
