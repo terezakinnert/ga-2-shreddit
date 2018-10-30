@@ -32,7 +32,7 @@ router.route('/login')
   .get(authController.loginFormRoute)
   .post(authController.loginRoute);
 
-
-
+router.route('/logout')
+  .get(authController.logoutRoute);
 
 module.exports = router;

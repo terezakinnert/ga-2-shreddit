@@ -17,7 +17,7 @@ function loginFormRoute(req, res) {
 }
 
 function loginRoute(req, res) {
-  console.log('User is logging in', req.body);
+  console.log('Logging in:', req.body);
   User.findOne({ email: req.body.email })
     .then(result => {
       if (!result) {
@@ -30,11 +30,17 @@ function loginRoute(req, res) {
     });
 }
 
+function logoutRoute(req, res, next) {
+  req.session.regenerate(function() {
+    res.redirect('/');
+    next();
+  });
+}
 
 module.exports = {
   registerFormRoute: registerFormRoute,
   registerRoute: registerRoute,
   loginFormRoute: loginFormRoute,
-  loginRoute: loginRoute
-  // logoutRoute: logoutRoute
+  loginRoute: loginRoute,
+  logoutRoute: logoutRoute
 };
