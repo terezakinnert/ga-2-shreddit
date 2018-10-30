@@ -34,6 +34,7 @@ function editRoute(req, res) {
 }
 
 function updateRoute(req, res) {
+  console.log(`this is the id and body of Venue: ${req.params.id} ${req.body}`);
   Venue.findByIdAndUpdate(req.params.id, req.body)
     .then(venue => {
       res.redirect(`/venues/${venue._id}`);

@@ -31,4 +31,7 @@ First RESTful app
  (watch out for url in the form!)
 
 - add edit and update routes
--
+
+- add delete button
+- delete route
+(edit route and/or form broke)
