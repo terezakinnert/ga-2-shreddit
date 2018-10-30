@@ -12,16 +12,17 @@ router.get('/about', function(req, res) {
 router.route('/venues')
   .get(venueController.indexRoute);
 
+router.get('/new', venueController.newRoute);
+
 router.route('/venues/:id')
   .get(venueController.showRoute)
   .put(venueController.updateRoute)
   .delete(venueController.deleteRoute);
 
-router.get('/new', venueController.newRoute);
+router.get('/venues/:id/edit', venueController.editRoute);
 
 router.post('/venues', venueController.createRoute);
 
-router.get('/venues/:id/edit', venueController.editRoute);
 
 
 

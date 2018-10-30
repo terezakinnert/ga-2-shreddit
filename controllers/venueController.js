@@ -9,16 +9,16 @@ function indexRoute(req, res) {
   });
 }
 
+function newRoute(req, res) {
+  res.render('venues/new');
+}
+
 function showRoute(req, res) {
   Venue
     .findById(req.params.id)
     .then(venue => {
       res.render('venues/show', venue);
     });
-}
-
-function newRoute(req, res) {
-  res.render('venues/new');
 }
 
 function createRoute(req, res) {
@@ -34,7 +34,6 @@ function editRoute(req, res) {
 }
 
 function updateRoute(req, res) {
-  console.log(`this is the id and body of Venue: ${req.params.id} ${req.body}`);
   Venue.findByIdAndUpdate(req.params.id, req.body)
     .then(venue => {
       res.redirect(`/venues/${venue._id}`);
