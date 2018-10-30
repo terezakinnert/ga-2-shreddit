@@ -19,11 +19,8 @@ router.get('/new', venueController.newRoute);
 
 router.post('/venues', venueController.createRoute);
 
+router.get('/venues/:id/edit', venueController.editRoute);
+
+
+
 module.exports = router;
-
-
-
-
-// router.post('/cocktails', secureRoute, cocktailController.createRoute);
-// router.route('/bass')
-//   .post(secureRoute, bassController.createRoute) // create

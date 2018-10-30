@@ -24,8 +24,11 @@ First RESTful app
 - test
   (weird linters)
 
-- create new route
-- create new form
+- add new and create routes
+- add new form
 
 - add create route
 - watch out for url in the form!
+
+- add edit and update routes 
+-

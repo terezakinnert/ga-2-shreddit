@@ -26,10 +26,17 @@ function createRoute(req, res) {
     .then(result => res.redirect(`/venues/${result._id}`));
 }
 
+function editRoute(req, res) {
+  Venue.findById(req.params.id)
+    .then(result => {
+      res.render('venues/edit', result);
+    });
+}
 
 module.exports = {
   indexRoute: indexRoute,
   showRoute: showRoute,
   newRoute: newRoute,
-  createRoute: createRoute
+  createRoute: createRoute,
+  editRoute: editRoute
 };
