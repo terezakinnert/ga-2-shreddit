@@ -23,3 +23,9 @@ First RESTful app
 - populate show.ejs
 - test
   (weird linters)
+
+- create new route
+- create new form
+
+- add create route
+- watch out for url in the form!

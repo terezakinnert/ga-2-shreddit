@@ -21,10 +21,15 @@ function newRoute(req, res) {
   res.render('venues/new');
 }
 
+function createRoute(req, res) {
+  Venue.create(req.body)
+    .then(result => res.redirect(`/venues/${result._id}`));
+}
 
 
 module.exports = {
   indexRoute: indexRoute,
   showRoute: showRoute,
-  newRoute: newRoute
+  newRoute: newRoute,
+  createRoute: createRoute
 };
