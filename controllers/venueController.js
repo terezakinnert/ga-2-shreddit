@@ -17,7 +17,14 @@ function showRoute(req, res) {
     });
 }
 
+function newRoute(req, res) {
+  res.render('venues/new');
+}
+
+
+
 module.exports = {
   indexRoute: indexRoute,
-  showRoute: showRoute
+  showRoute: showRoute,
+  newRoute: newRoute
 };

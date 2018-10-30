@@ -15,4 +15,7 @@ router.route('/venues')
 router.route('/venues/:id')
   .get(venueController.showRoute);
 
+
+router.get('/new', venueController.newRoute);
+
 module.exports = router;
