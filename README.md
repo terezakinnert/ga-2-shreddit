@@ -38,3 +38,5 @@ First RESTful app
 
 (linter is freaking out: in edit.js )
 parsing error: adjacent jsx elements must be wrapped in an enclosing tag. did you want a jsx fragment <>...</>? (Fatal). It gave me 39 errors in the same file before; I changed the linter settings (it kept saying that react variable is not in scope "react/react-in-jsx-scope")
+
+- user model
