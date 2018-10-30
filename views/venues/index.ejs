@@ -1,9 +1,21 @@
 <h1>Index</h1>
 
-<div class="venue-container">
+<div class="venues-container" >
   <% venues.forEach(venue => {  %>
-  <div class="">
-    <%= venue.name %>
+
+  <div class="venue-box">
+    <p><%= venue.name %></p>
+    <p><%= venue.address %></p>
+    <div class=""><img src="<%= venue.image %>" alt="<%= venue.name %>" width="350px"></div>
+    <p><a href="<%= venue.website %>">Website</a></p>
+    <p><%= venue.capacity %></p>
+    <p>Closest Tube Station: <%= venue.closestTube %></p>
+
+    <div class="description">
+      <p>Description:</p>
+      <p><%= venue.description %></p>
+    </div>
+
   </div>
   <% }) %>
 </div>
