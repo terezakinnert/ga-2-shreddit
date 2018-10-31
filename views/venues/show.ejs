@@ -18,5 +18,41 @@
   <form action="/venues/<%= _id %>?_method=DELETE" method="post">
     <button>Delete this venue</button>
   </form>
+
+  <div class="comments">
+    <h3>Comments</h3>
+    <% reviews.forEach(review => {  %>
+      <div class=""><%= review.username %></div>
+      <div class=""><%= review.title %></div>
+      <div class=""><%= review.content %></div>
+      <div class=""><%= review.rating %></div>
+      <div class=""><%= review.image %></div>
+      <div class=""><%= review.date %></div>
+    <% }) %>
+  </div>
+
+  <form class="" action="/venues/<%= _id %>/reviews" method="post">
+    <h4>Add a comment</h4>
+    <div class="">
+      <input type="text" name="username" value="<%= locals.currentUser.username %>" type="hidden">
+    </div>
+
+    <div class="">
+      <label for="title">Title</label>
+      <input type="text" name="title">
+    </div>
+
+    <div class="">
+      <label for="content">Content</label>
+      <textarea name="content"></textarea>
+    </div>
+
+    <div class="">
+      <label for="rating">Rating</label>
+      <input type="number" name="rating" min="1" max="5">
+    </div>
+
+    <button>Post comment</button>
+  </form>
   <% } %>
 </div>

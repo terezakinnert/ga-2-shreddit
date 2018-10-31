@@ -45,6 +45,10 @@ parsing error: adjacent jsx elements must be wrapped in an enclosing tag. did yo
 - register and login routes (express session)
 - logout route
 
+- auth status function defined
+- secure route defined and added to selected routes
+- restricted parts of show pages according to auth status
+- parts of homepage and header to change according to auth status, logout button added
 
 
 

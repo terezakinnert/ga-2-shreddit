@@ -8,7 +8,7 @@ const venueSchema = mongoose.Schema({
   capacity: Number,
   closestTube: String,
   description: String,
-  review: [
+  reviews: [
     {
       username: String,
       title: String,
