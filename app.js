@@ -28,6 +28,9 @@ app.use('*', function(req, res, next) {
   next();
 });
 
+const auth = require('./lib/auth');
+app.use('*', auth.checkAuthStatus);
+
 const router = require('./config/routes');
 app.use(router);
 

@@ -47,5 +47,7 @@ parsing error: adjacent jsx elements must be wrapped in an enclosing tag. did yo
 
 
 
-TO DO: 
+
+
+TO DO:
 go back on show page (to go to index) and on edit (to cancel editing) + cancel login/register?
