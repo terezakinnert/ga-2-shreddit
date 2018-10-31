@@ -40,7 +40,7 @@ router.route('/logout')
 router.route('/venues/:venueId/reviews')
   .post(secureRoute, reviewController.createReviewRoute);
 
-router.route('venues/:venueId/reviews/:reviewId')
+router.route('/venues/:venueId/reviews/:reviewId')
   .delete(secureRoute, reviewController.deleteReviewRoute);
 
 module.exports = router;
