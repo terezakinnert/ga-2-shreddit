@@ -16,7 +16,7 @@ function deleteReview(req, res) {
     .then(venue => {
       venue.reviews.id(req.params.reviewId).remove();
       venue.save()
-        .then(() => res.redirect(`venues/${req.params.venueId}`));
+        .then(() => res.redirect(`/venues/${req.params.venueId}`));
     });
 }
 
