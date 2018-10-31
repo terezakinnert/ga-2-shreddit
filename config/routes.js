@@ -2,6 +2,7 @@ const router = require('express').Router();
 const venueController = require('../controllers/venueController');
 const authController = require('../controllers/authController');
 const secureRoute = require('../lib/secure-route');
+const reviewController = require('../controllers/reviewController');
 
 router.get('/', function(req, res) {
   res.render('home');
@@ -35,5 +36,8 @@ router.route('/login')
 
 router.route('/logout')
   .get(authController.logoutRoute);
+
+router.route('/venues/:venueId/reviews')
+  .post(secureRoute, reviewController.createReviewRoute);
 
 module.exports = router;
