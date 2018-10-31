@@ -28,6 +28,11 @@
       <div class=""><%= review.rating %></div>
       <div class=""><%= review.image %></div>
       <div class=""><%= review.date %></div>
+      <div class="">
+        <form action="/venues/<%= _id %>/reviews/<%= review._id %>?_method=DELETE" method="post">
+          <button>X</button>
+        </form>
+      </div>
     <% }) %>
   </div>
 
@@ -50,6 +55,11 @@
     <div class="">
       <label for="rating">Rating</label>
       <input type="number" name="rating" min="1" max="5">
+    </div>
+
+    <div class="">
+      <label for="image">Image URL</label>
+      <input type="text" name="image">
     </div>
 
     <button>Post comment</button>
