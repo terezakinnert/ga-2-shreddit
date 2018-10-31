@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const venueController = require('../controllers/venueController');
 const authController = require('../controllers/authController');
+const secureRoute = require('../lib/secure-route');
 
 router.get('/', function(req, res) {
   res.render('home');
@@ -13,7 +14,7 @@ router.get('/about', function(req, res) {
 router.route('/venues')
   .get(venueController.indexRoute);
 
-router.get('/new', venueController.newRoute);
+router.get('/new', secureRoute, venueController.newRoute);
 
 router.route('/venues/:id')
   .get(venueController.showRoute)
