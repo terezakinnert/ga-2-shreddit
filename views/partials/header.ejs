@@ -1,14 +1,14 @@
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/venues">Explore</a></li>
-    <li><a href="/new">Add a Venue</a></li>
-    <li><a href="/about">About</a></li>
+<nav class="navbar-container">
+  <ul class="navbar-menu navbar-end">
+    <li class="navbar-item"><a href="/">Home</a></li>
+    <li class="navbar-item"><a href="/venues">Explore</a></li>
+    <li class="navbar-item"><a href="/new">Add a Venue</a></li>
+    <li class="navbar-item"><a href="/about">About</a></li>
     <% if (locals.isLoggedIn) { %>
-      <li><a href="/logout">Log Out, <%= locals.currentUser.username %></a></li>
+      <li class="navbar-item"><a href="/logout">Log Out, <%= locals.currentUser.username %></a></li>
     <% } else { %>
-    <li><a href="/register">Register</a></li>
-    <li><a href="/login">Login</a></li>
+    <li class="navbar-item"><a href="/register">Register</a></li>
+    <li class="navbar-item"><a href="/login">Login</a></li>
     <% } %>
 
   </ul>
