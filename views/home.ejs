@@ -1,12 +1,18 @@
 <h1>Welcome to ShreddIt</h1>
 
+<% if (locals.isLoggedIn) { %>
+  <h4>Welcome back, <%= locals.currentUser.username %></h4>
+
+  <% } %>
+
 <h3>Browse and review venues:</h3>
 
 <div class="container">
 
 </div>
+<% if (!locals.isLoggedIn) { %>
+  or
 
-or
-
-<div class=""><a href="/register">Register</a></div>
-<div class=""><a href="/login">Log In</a></div>
+  <div class=""><a href="/register">Register</a></div>
+  <div class=""><a href="/login">Log In</a></div>
+<% } %>
