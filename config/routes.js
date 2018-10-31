@@ -18,12 +18,12 @@ router.get('/new', secureRoute, venueController.newRoute);
 
 router.route('/venues/:id')
   .get(venueController.showRoute)
-  .put(venueController.updateRoute)
-  .delete(venueController.deleteRoute);
+  .put(secureRoute, venueController.updateRoute)
+  .delete(secureRoute, venueController.deleteRoute);
 
-router.post('/venues', venueController.createRoute);
+router.post('/venues', secureRoute, venueController.createRoute);
 
-router.get('/venues/:id/edit', venueController.editRoute);
+router.get('/venues/:id/edit', secureRoute, venueController.editRoute);
 
 router.route('/register')
   .get(authController.registerFormRoute)
