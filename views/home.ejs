@@ -1,18 +1,18 @@
-<h1>Welcome to ShreddIt</h1>
+<main class="home-container">
+  <h1 class="title is-1 shreddit-title">ShreddIt</h1>
+  <h2 class="subtitle">Browse and review independent music venues in London</h2>
 
-<% if (locals.isLoggedIn) { %>
-  <h4>Welcome back, <%= locals.currentUser.username %></h4>
+  <% if (locals.isLoggedIn) { %>
+    <h4>Welcome back, <%= locals.currentUser.username %></h4>
 
+    <% } %>
+
+
+  <% if (!locals.isLoggedIn) { %>
+    <p class="paragraph">or</p>
+    <div class="button-container">
+      <div class="home-button"><a href="/register">Register</a></div>
+      <div class="home-button"><a href="/login">Log In</a></div>
+    </div>
   <% } %>
-
-<h3>Browse and review venues:</h3>
-
-<div class="container">
-
-</div>
-<% if (!locals.isLoggedIn) { %>
-  or
-
-  <div class=""><a href="/register">Register</a></div>
-  <div class=""><a href="/login">Log In</a></div>
-<% } %>
+</main>
