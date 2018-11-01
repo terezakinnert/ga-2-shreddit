@@ -2,11 +2,12 @@
   color: #4a4a4a;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.5rem;
+  text-align: center;
 }
 
 .nav {
-  height: 20vh;
+  height: 10vh;
   padding: 10px;
 }
 
@@ -16,7 +17,7 @@
   align-items: center;
 }
 
-.shreddit-title {
+.shreddit-title, h2 {
   padding: 5vh;
 }
 
@@ -24,17 +25,26 @@
   margin: 5vh;
 }
 
-.button-container {
+/* .button-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-}
+} */
 
-.home-button {
+/* .home-button {
   border: 1px solid black;
   padding: 3vh;
   width: 10vw;
   margin: 5vh;
   display: inline-block;
+} */
+
+.venue-box {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.img-box {
+  padding: 2vw;
 }

@@ -13,7 +13,25 @@ const venueData = [
     website: 'https://www.windmillbrixton.co.uk/',
     capacity: 70,
     closestTube: 'Brixton',
-    description: 'all kinds of cool stuff in Brixton'
+    description: `The pub didn’t set out to be a venue as such but live music there,
+    just kinda evolved. Late night sessions at this bar revealed that the regulars carried a wealth
+    of experience in musicianship, sound engineering and promoting, and since they drank there anyway
+    they decided that they should get a good band down now and again to listen to. The bands came.
+    They loved the informality and the fact that the venue bothered to pay them, and, some five years
+    later the Windmill is known far beyond the backstreet in Brixton where it’s situated.`
+  },
+  {
+    name: 'The Victoria',
+    address: '451 Queensbridge Rd, London E8 3AS',
+    image: 'https://i0.wp.com/www.jaguarshoes.com/wp-content/uploads/2017/03/20170928-01-Ph-CFaruolo.jpg?fit=2048%2C1367',
+    website: 'http://www.jaguarshoes.com/venue/the-victoria/',
+    capacity: 150,
+    closestTube: 'Dalston Junction',
+    description: `The stunning 50’s bar island takes centre stage in the venue, illuminated,
+    and boasting the kind of drinks offer you’d expect to find; JaguarShoes classic cocktails,
+    locally brewed craft beers and a selection of new and old world wines. The VICTORIA has a
+    long standing heritage as a music venue, we plan to maintain that under JaguarShoes,
+    but it’s also a great pub and it feels like for a long time that’s been overlooked.`
   },
   {
     name: 'The Black Heart',
@@ -22,7 +40,8 @@ const venueData = [
     website: 'http://www.ourblackheart.com',
     capacity: 70,
     closestTube: 'Camden Town',
-    description: 'all kinds of cool stuff in Camden'
+    description: `Rock pub in a narrow street around the corner from Camden Town station. Separate
+    venue space upstairs with a smaller bar.`
   }];
 
 Venue.create(venueData)

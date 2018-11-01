@@ -2,23 +2,28 @@
   <div class="columns is-multiline is-centered">
     <h2 class="column is-12 title is-2"><%= name %></h2>
     <div class="column is-12">
-      <address><span>Address: </span><%= address %></address>
+      <address><%= address %></address>
       <p><a href="<%= website %>" target="_blank">Website</a></p>
       <p>Capacity: <%= capacity %></p>
       <p>Closest Tube Station: <%= closestTube %></p>
-
+      <div class="img-box">
+        <img src="<%= image %>" alt="<%= name %>" width="70%">
+      </div>
       <div class="description">
-        <p>Description:</p>
+        <p><strong>Description:</strong></p>
         <p><%= description %></p>
       </div>
 
     </div>
     <% if (locals.isLoggedIn) { %>
-    <a href="/venues/<%= _id %>/edit" class="column is-12">Edit this venue</a>
-
-    <form class="column is-12" action="/venues/<%= _id %>?_method=DELETE" method="post">
-      <button>Delete this venue</button>
-    </form>
+      <div class="field is-grouped">
+        <div><a href="/venues/<%= _id %>/edit" class="button">Edit this venue</a></div>
+        <div>
+          <form action="/venues/<%= _id %>?_method=DELETE" method="post">
+            <button class="button">Delete this venue</button>
+          </form>
+        </div>
+      </div>
 
     <div class="comments column is-12">
       <h4 class="title is-4">Comments</h4>
