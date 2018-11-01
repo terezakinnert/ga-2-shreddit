@@ -1,8 +1,8 @@
-<main class="columns">
-  <div class="columns is-multiline is-centered column">
-    <h2><%= name %></h2>
-    <div class="">
-      <address><%= address %></address>
+<main>
+  <div class="columns is-multiline is-centered">
+    <h2 class="column is-12 title is-2"><%= name %></h2>
+    <div class="column is-12">
+      <address><span>Address: </span><%= address %></address>
       <p><a href="<%= website %>" target="_blank">Website</a></p>
       <p>Capacity: <%= capacity %></p>
       <p>Closest Tube Station: <%= closestTube %></p>
@@ -14,14 +14,14 @@
 
     </div>
     <% if (locals.isLoggedIn) { %>
-    <a href="/venues/<%= _id %>/edit">Edit this venue</a>
+    <a href="/venues/<%= _id %>/edit" class="column is-12">Edit this venue</a>
 
-    <form action="/venues/<%= _id %>?_method=DELETE" method="post">
+    <form class="column is-12" action="/venues/<%= _id %>?_method=DELETE" method="post">
       <button>Delete this venue</button>
     </form>
 
-    <div class="comments">
-      <h3>Comments</h3>
+    <div class="comments column is-12">
+      <h4 class="title is-4">Comments</h4>
       <% reviews.forEach(review => {  %>
         <div class=""><%= review.username %></div>
         <div class=""><%= review.title %></div>
@@ -37,34 +37,36 @@
       <% }) %>
     </div>
 
-    <form class="" action="/venues/<%= _id %>/reviews" method="post">
-      <h4>Add a comment</h4>
-      <div class="field">
-        <input type="hidden" name="username" value="<%= locals.currentUser.username %>" >
-      </div>
+  <div class="columns">
+      <form class="column is-12" action="/venues/<%= _id %>/reviews" method="post">
+        <h5 class="title is-5">Add a comment</h5>
+        <div class="field">
+          <input type="hidden" name="username" value="<%= locals.currentUser.username %>" >
+        </div>
 
-      <div class="field">
-        <label for="title">Title</label>
-        <input type="text" name="title">
-      </div>
+        <div class="field">
+          <label for="title">Title</label>
+          <input type="text" name="title">
+        </div>
 
-      <div class="field">
-        <label for="content">Content</label>
-        <textarea name="content"></textarea>
-      </div>
+        <div class="field">
+          <label for="content">Content</label>
+          <textarea name="content"></textarea>
+        </div>
 
-      <div class="field">
-        <label for="rating">Rating</label>
-        <input type="number" name="rating" min="1" max="5">
-      </div>
+        <div class="field">
+          <label for="rating">Rating</label>
+          <input type="number" name="rating" min="1" max="5">
+        </div>
 
-      <div class="field">
-        <label for="image">Image URL</label>
-        <input type="text" name="image">
-      </div>
+        <div class="field">
+          <label for="image">Image URL</label>
+          <input type="text" name="image">
+        </div>
 
-      <button>Post comment</button>
-    </form>
-    <% } %>
+        <button>Post comment</button>
+      </form>
+      <% } %>
+    </div>
   </div>
 </main>
