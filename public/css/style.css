@@ -1,9 +1,18 @@
-* {
+body {
   color: #4a4a4a;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
+  background-color: #fafafa;
+}
+
+a {
+  color: #612147;
+}
+
+a:hover {
+  color: #216155;
 }
 
 .nav {
@@ -17,34 +26,34 @@
   align-items: center;
 }
 
-.shreddit-title, h2 {
+.shreddit-title {
+  color: #612147;
   padding: 5vh;
+}
+
+.shreddit-title-small {
+  color: #612147;
+  padding: 4vh;
 }
 
 .paragraph {
   margin: 5vh;
 }
 
-/* .button-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-} */
-
-/* .home-button {
-  border: 1px solid black;
-  padding: 3vh;
-  width: 10vw;
-  margin: 5vh;
-  display: inline-block;
-} */
-
 .venue-box {
-  border: 1px solid black;
+  border: 1px solid #612147;
   margin: 10px;
 }
 
 .img-box {
   padding: 2vw;
+}
+
+.shreddit-button {
+  border-color: #612147;
+}
+
+.shreddit-button:hover {
+  border-color: #216155;
+  color: #216155;
 }

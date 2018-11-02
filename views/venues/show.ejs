@@ -17,10 +17,10 @@
     </div>
     <% if (locals.isLoggedIn) { %>
       <div class="field is-grouped">
-        <div><a href="/venues/<%= _id %>/edit" class="button">Edit this venue</a></div>
+        <div><a href="/venues/<%= _id %>/edit" class="button shreddit-button">Edit this venue</a></div>
         <div>
           <form action="/venues/<%= _id %>?_method=DELETE" method="post">
-            <button class="button">Delete this venue</button>
+            <button class="button shreddit-button">Delete this venue</button>
           </form>
         </div>
       </div>
@@ -36,7 +36,7 @@
         <div class=""><%= review.date %></div>
         <div class="">
           <form action="/venues/<%= _id %>/reviews/<%= review._id %>?_method=DELETE" method="post">
-            <button>X</button>
+            <button class="button shreddit-button">X</button>
           </form>
         </div>
       <% }) %>
@@ -69,7 +69,7 @@
           <input type="text" name="image">
         </div>
 
-        <button>Post comment</button>
+        <button class="button shreddit-button">Post comment</button>
       </form>
       <% } %>
     </div>

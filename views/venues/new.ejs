@@ -1,58 +1,57 @@
-<main class="columns is-centered is-multiline">
+<h2 class="title is-2 shreddit-title-small">Add a Venue</h2>
 
-  <h2 class="title is-2">Add a Venue</h2>
+<form class="" action="/venues" method="post">
+  <div class="">
 
-  <form class="columns is-centered is-multiline" action="/venues" method="post">
-
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="name">Name</label>
       <div class="control field-body">
         <input type="text" name="name" value="">
       </div>
     </div>
 
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="address">Address</label>
       <div class="control field-body">
         <input type="text" name="address" value="">
       </div>
     </div>
 
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="image">Image URL</label>
       <div class="control field-body">
         <input type="text" name="image" value="">
       </div>
     </div>
 
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="website">Website URL</label>
       <div class="control field-body">
         <input type="text" name="website" value="">
       </div>
     </div>
 
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="capacity">Capacity</label>
       <div class="control field-body">
-        <input type="text" name="capacity">
+        <input type="number" name="capacity">
       </div>
     </div>
 
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="closestTube">Closest Tube Station</label>
       <div class="control field-body">
         <input type="text" name="closestTube" value="">
       </div>
     </div>
 
-    <div class="field is-horizontal column is-12">
+    <div class="field is-horizontal">
       <label class="field-label" for="description">Description</label>
       <div class="control field-body">
         <textarea name="description"></textarea>
       </div>
     </div>
 
-    <button class="button">Submit</button>
-  </form>
-</main>
+    <button class="button shreddit-button">Submit</button>
+  </div>
+</form>
