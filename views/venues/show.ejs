@@ -1,6 +1,6 @@
 <main>
   <div class="columns is-multiline is-centered">
-    <h2 class="column is-12 title is-2"><%= name %></h2>
+    <h2 class="column is-12 title is-2 shreddit-title-small"><%= name %></h2>
     <div class="column is-12">
       <address><%= address %></address>
       <p><a href="<%= website %>" target="_blank">Website</a></p>
@@ -26,7 +26,7 @@
       </div>
 
     <div class="comments column is-12">
-      <h4 class="title is-4">Comments</h4>
+      <h4 class="title is-4 shreddit-title-small">Comments</h4>
       <% reviews.forEach(review => {  %>
         <div class=""><%= review.username %></div>
         <div class=""><%= review.title %></div>
@@ -44,7 +44,7 @@
 
   <div class="columns">
       <form class="column is-12" action="/venues/<%= _id %>/reviews" method="post">
-        <h5 class="title is-5">Add a comment</h5>
+        <h5 class="title is-5 shreddit-title-small">Add a comment</h5>
         <div class="field">
           <input type="hidden" name="username" value="<%= locals.currentUser.username %>" >
         </div>
