@@ -32,7 +32,7 @@
         <div class=""><%= review.title %></div>
         <div class=""><%= review.content %></div>
         <div class=""><%= review.rating %></div>
-        <div class=""><%= review.image %></div>
+        <div class=""><img src="<%= review.image %>"></div>
         <div class=""><%= review.date %></div>
         <div class="">
           <form action="/venues/<%= _id %>/reviews/<%= review._id %>?_method=DELETE" method="post">
