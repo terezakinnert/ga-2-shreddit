@@ -46,6 +46,6 @@ const venueData = [
 
 Venue.create(venueData)
   .then(result => {
-    console.log(`Created ${result.length} venues!`);
+    // console.log(`Created ${result.length} venues!`);
     mongoose.connection.close();
   });

@@ -8,7 +8,7 @@ function registerRoute(req, res) {
   User.create(req.body)
     .then(result => {
       console.log(`User created ${result}`);
-      res.redirect('/');
+      res.redirect('/login');
     });
 }
 
@@ -17,11 +17,9 @@ function loginFormRoute(req, res) {
 }
 
 function loginRoute(req, res) {
-  console.log('Logging in:', req.body);
   User.findOne({ email: req.body.email })
     .then(result => {
       if (!result) {
-        console.log('User not authorised');
         res.redirect('/login');
       } else {
         req.session.userId = result._id;
