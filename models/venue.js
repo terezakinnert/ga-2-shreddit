@@ -14,8 +14,7 @@ const venueSchema = mongoose.Schema({
       title: String,
       content: String,
       rating: { type: Number, min: 1, max: 5},
-      image: String,
-      date: String
+      image: String
     }
   ]
 });
