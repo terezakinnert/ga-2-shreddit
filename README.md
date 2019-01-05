@@ -2,12 +2,23 @@
 
 # ShreddIt
 
-#### Second Project at General Assembly's Web Development Immersive Course
+####  Second Project at General Assembly's Web Development Immersive Course
+
 
 ShreddIt is a platform for reviewing independent music venues, primarily in London. Users can view venues and other users' reviews. Logged-in users can add other venues, comment/rate any of them, edit and delete them.
 
 ### Table of Contents
 
+- [Getting Started](#getting-started)
+- [Description](#description)
+  - [Brief](#brief)
+  - [Tools and Technologies Used](#tools-and-technologies-used)
+  - [Wireframes](#wireframes)
+  - [Screenshots](#screenshots)
+  - [Known Issues](#known-issues)
+- [Challenges and Wins](#challenges-and-wins)
+- [Future Work](#future-work)
+- [Contact](#contact)
 
 
 ## Getting Started
@@ -26,7 +37,6 @@ Prerequisites: MongoDB installed and `mongod` running
 ## Description
 
 Fully RESTful web application built solo in a week's time.
-
 
 ###  Brief
 
@@ -60,7 +70,7 @@ Before starting to code I made sure I planned the project as thoroughly as I cou
 ![Wireframes](/wireframes/all-wireframes.png)
 
 
-### Screenshots
+###  Screenshots
 
 
 Home page as seen by a user who isn't logged in
@@ -83,15 +93,14 @@ Editing a venue
 - any user can edit and delete venues and other users' ratings
 
 
-##  Challenges and Wins
-
+## Challenges and Wins
 
 When you learn how to code everything you see is new, and even learning how linter works, how it helps you and how to listen to its error messages can be challenging. Mine was under the assumption I was working with React and not EJS, and its messages were at first incomprehensible. However it taught me how to use linter effectively and configure settings appropriately.
 
 This was the first single page application I ever made, after a week of learning back end basics and templating, and I was battling the flu while working on it. Despite its limitations it was a great way to learn how to put the various web development pieces together and starting to see how things work on the back end.
 
 
-## Future Work
+## Future Work
 
 
 If I had more time I would make the interface more user friendly and fix the layout issues. I would also add more useful categories to fill in for venues as well as users, calculate average ratings, add like/dislike buttons, and made the app more secure by allowing users to edit and delete only their own venues and ratings.
