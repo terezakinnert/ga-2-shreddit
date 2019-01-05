@@ -9,6 +9,7 @@ ShreddIt is a platform for reviewing independent music venues, primarily in Lond
 ### Table of Contents
 
 
+
 ## Getting Started
 
 #### [Deployed app](https://shred-dit.herokuapp.com)
@@ -27,7 +28,7 @@ Prerequisites: MongoDB installed and `mongod` running
 Fully RESTful web application built solo in a week's time.
 
 
-### Brief
+###  Brief
 
 My second GA project was supposed to fulfil these requirements:
 
@@ -61,6 +62,7 @@ Before starting to code I made sure I planned the project as thoroughly as I cou
 
 ### Screenshots
 
+
 Home page as seen by a user who isn't logged in
 ![Home page](wireframes/screenshots/shreddit-home.png)
 
@@ -76,11 +78,13 @@ Editing a venue
 
 ### Known Issues
 
+
 - layout and styling
 - any user can edit and delete venues and other users' ratings
 
 
-## Challenges and Wins
+##  Challenges and Wins
+
 
 When you learn how to code everything you see is new, and even learning how linter works, how it helps you and how to listen to its error messages can be challenging. Mine was under the assumption I was working with React and not EJS, and its messages were at first incomprehensible. However it taught me how to use linter effectively and configure settings appropriately.
 
@@ -89,8 +93,11 @@ This was the first single page application I ever made, after a week of learning
 
 ## Future Work
 
+
 If I had more time I would make the interface more user friendly and fix the layout issues. I would also add more useful categories to fill in for venues as well as users, calculate average ratings, add like/dislike buttons, and made the app more secure by allowing users to edit and delete only their own venues and ratings.
 
+
 ## Contact
+
 
 [Portfolio](http://terezakinnert.com/) | [LinkedIn](https://www.linkedin.com/in/terezakinnert/)
