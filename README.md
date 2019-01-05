@@ -2,7 +2,7 @@
 
 # ShreddIt
 
-####  Second Project at General Assembly's Web Development Immersive Course
+#### Second Project at General Assembly's Web Development Immersive Course
 
 
 ShreddIt is a platform for reviewing independent music venues, primarily in London. Users can view venues and other users' reviews. Logged-in users can add other venues, comment/rate any of them, edit and delete them.
@@ -10,6 +10,8 @@ ShreddIt is a platform for reviewing independent music venues, primarily in Lond
 ### Table of Contents
 
 - [Getting Started](#getting-started)
+  - [Deployed App](#deployed-app)
+  - [Installation Instructions](#to-run-locally)
 - [Description](#description)
   - [Brief](#brief)
   - [Tools and Technologies Used](#tools-and-technologies-used)
@@ -38,7 +40,8 @@ Prerequisites: MongoDB installed and `mongod` running
 
 Fully RESTful web application built solo in a week's time.
 
-###  Brief
+
+### Brief
 
 My second GA project was supposed to fulfil these requirements:
 
@@ -70,8 +73,7 @@ Before starting to code I made sure I planned the project as thoroughly as I cou
 ![Wireframes](/wireframes/all-wireframes.png)
 
 
-###  Screenshots
-
+### Screenshots
 
 Home page as seen by a user who isn't logged in
 ![Home page](wireframes/screenshots/shreddit-home.png)
@@ -88,7 +90,6 @@ Editing a venue
 
 ### Known Issues
 
-
 - layout and styling
 - any user can edit and delete venues and other users' ratings
 
@@ -102,11 +103,9 @@ This was the first single page application I ever made, after a week of learning
 
 ## Future Work
 
-
 If I had more time I would make the interface more user friendly and fix the layout issues. I would also add more useful categories to fill in for venues as well as users, calculate average ratings, add like/dislike buttons, and made the app more secure by allowing users to edit and delete only their own venues and ratings.
 
 
-## Contact
-
+## Contact
 
 [Portfolio](http://terezakinnert.com/) | [LinkedIn](https://www.linkedin.com/in/terezakinnert/)
