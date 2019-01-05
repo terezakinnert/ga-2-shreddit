@@ -10,6 +10,7 @@ ShreddIt is a platform for reviewing independent music venues, primarily in Lond
 
 ### Table of Contents
 
+[Tools and Technologies Used](#tools-and-technologies-used)
 
 ## Getting Started
 
