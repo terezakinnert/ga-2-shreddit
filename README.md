@@ -62,8 +62,8 @@ Node.js (v10.11.0) | JavaScript (ES6)| Git
 Express.js (v4.16.4) | HTML5 | GitHub
 MongoDB (v4.0.2) | CSS3 | InVision
 Mongoose (v5.3.7) | SCSS | Heroku
- - | EJS (v2.6.1) | - 
- - | Bulma | - 
+  | EJS (v2.6.1) |  
+  | Bulma |  
 
 
 ### Wireframes
