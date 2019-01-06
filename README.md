@@ -2,7 +2,7 @@
 
 # ShreddIt
 
-#### Second Project at General Assembly's Web Development Immersive Course
+#### General Assembly's Web Development Immersive Course: Project 2
 
 ShreddIt is a platform for reviewing independent music venues, primarily in London. Users can view venues and other users' reviews. Logged-in users can add other venues, comment/rate any of them, edit and delete them.
 
