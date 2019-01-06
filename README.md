@@ -4,7 +4,6 @@
 
 #### Second Project at General Assembly's Web Development Immersive Course
 
-
 ShreddIt is a platform for reviewing independent music venues, primarily in London. Users can view venues and other users' reviews. Logged-in users can add other venues, comment/rate any of them, edit and delete them.
 
 ### Table of Contents
@@ -31,8 +30,8 @@ ShreddIt is a platform for reviewing independent music venues, primarily in Lond
 
 Prerequisites: MongoDB installed and `mongod` running
 
-- Clone or download repo
-- Install dependencies in the same directory: `yarn` (or your package manager's equivalent command)
+- clone or download repo
+- install dependencies in the same directory: `yarn` (or your package manager's equivalent command)
 - `yarn start` and visit `http://localhost:4000/`
 
 
@@ -108,4 +107,4 @@ If I had more time I would make the interface more user friendly and fix the lay
 
 ## Contact
 
-[Portfolio](http://terezakinnert.com/) | [LinkedIn](https://www.linkedin.com/in/terezakinnert/)
+Feel free to see my [Portfolio](http://terezakinnert.com/) with more projects, or [LinkedIn profile](https://www.linkedin.com/in/terezakinnert/).
