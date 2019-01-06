@@ -2,14 +2,15 @@
 
 # ShreddIt
 
-#### General Assembly's Web Development Immersive Course: Project 2
+#### General Assembly's Web Development Immersive: Project 2
 
-ShreddIt is a platform for reviewing independent music venues, primarily in London. Users can view venues and other users' reviews. Logged-in users can add other venues, comment/rate any of them, edit and delete them.
+Fully RESTful single page web application built solo in a 7 days during a 12 week course. It was meant to solidify the basics of back end development and front end with EJS.
+
 
 ### Table of Contents
 
 - [Getting Started](#getting-started)
-  - [Deployed App](#deployed-app)
+  - [Live app](#live-version-of-the-app)
   - [Installation Instructions](#to-run-locally)
 - [Description](#description)
   - [Brief](#brief)
@@ -24,7 +25,7 @@ ShreddIt is a platform for reviewing independent music venues, primarily in Lond
 
 ## Getting Started
 
-#### [Deployed app](https://shred-dit.herokuapp.com)
+#### [Live version of the app](https://shred-dit.herokuapp.com)
 
 #### To run locally
 
@@ -37,12 +38,12 @@ Prerequisites: MongoDB installed and `mongod` running
 
 ## Description
 
-Fully RESTful web application built solo in a week's time.
+ShreddIt is a platform for reviewing independent music venues, primarily in London. Users can view venues and other users' reviews. Logged-in users can add other venues, comment/rate any of them, edit and delete them.
 
 
 ### Brief
 
-My second GA project was supposed to fulfil these requirements:
+The project was supposed to fulfil these requirements:
 
 - [x] 2 models: one representing a user and one that represents the main resource
 - [x] a user model and user authentication
@@ -89,13 +90,13 @@ Editing a venue
 
 ### Known Issues
 
-- layout and styling
+- layout and styling (elements flow off the screen on the explore page, )
 - any user can edit and delete venues and other users' ratings
 
 
 ## Challenges and Wins
 
-When you learn how to code everything you see is new, and even learning how linter works, how it helps you and how to listen to its error messages can be challenging. Mine was under the assumption I was working with React and not EJS, and its messages were at first incomprehensible. However it taught me how to use linter effectively and configure settings appropriately.
+When you learn how to code everything you see is new, and even learning how linter works, how it helps you and how to listen to its error messages can be challenging. Mine was under the assumption I was working with React and not EJS, and its messages were at first incomprehensible. However it taught me how to use linter effectively and configure its settings appropriately.
 
 This was the first single page application I ever made, after a week of learning back end basics and templating, and I was battling the flu while working on it. Despite its limitations it was a great way to learn how to put the various web development pieces together and starting to see how things work on the back end.
 
@@ -107,4 +108,4 @@ If I had more time I would make the interface more user friendly and fix the lay
 
 ## Contact
 
-Feel free to see my [Portfolio](http://terezakinnert.com/) with more projects, or [LinkedIn profile](https://www.linkedin.com/in/terezakinnert/).
+Feel free to check out my [Portfolio](http://terezakinnert.com/) with more projects, or [LinkedIn profile](https://www.linkedin.com/in/terezakinnert/).
