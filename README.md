@@ -44,18 +44,18 @@ Fully RESTful web application built solo in a week's time.
 
 My second GA project was supposed to fulfil these requirements:
 
-- 2 models: one representing a user and one that represents the main resource
-- a user model and user authentication
-- complete RESTful routes for at least one of the resources with all CRUD actions
-- styled with Bulma
-- deployed online and accessible to the public
-- includes relationships - embedded or referenced
-- includes wireframes designed before building the app
+- [x] 2 models: one representing a user and one that represents the main resource
+- [x] a user model and user authentication
+- [x] complete RESTful routes for at least one of the resources with all CRUD actions
+- [x] styled with Bulma
+- [x] deployed online and accessible to the public
+- [x] includes relationships - embedded or referenced
+- [x] includes wireframes designed before building the app
 
 
 ### Tools and Technologies Used
 
-| Front End            | Back End         | Other    |
+| Back End             | Front End         | Other    |
 |----------------------|------------------|----------|
 | Node.js (v10.11.0)   | JavaScript (ES6) | Git      |
 | Express.js (v4.16.4) | HTML5            | GitHub   |
