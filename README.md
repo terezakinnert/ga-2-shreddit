@@ -2,6 +2,8 @@
 
 # ShreddIt
 
+[![Known Vulnerabilities](https://snyk.io/test/github/terezakinnert/ga-2-shreddit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/terezakinnert/ga-2-shreddit?targetFile=package.json)
+
 #### General Assembly's Web Development Immersive: Project 2
 
 Fully RESTful single page web application built solo in a 7 days during a 12 week course. It was meant to solidify the basics of back end development and front end with EJS.
